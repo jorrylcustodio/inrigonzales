@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> WEBPORT </title>
+    <link rel="icon" href="incognito.png" type="icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Login form -->
+    <div id="login-form" class="login-form">
+        <input type="text" id="username-input" placeholder="Enter username" required> <!-- Added username input -->
+        <input type="password" id="password-input" placeholder="Enter password" required>
+        <button id="submit-btn">Log In</button>
+    </div>
+
+    <!-- Main content -->
+    <main style="display: none;">
+  
+        <!----------- NAVIGATION ----------->
+        <nav class='navigation-bar'>
+            <div class='nav-container'>
+                <img class='logo' src='cognito.webp' alt='LOGO'>
+                <ul class='nav-list'>
+                    <li><a href='#section-home'>HOME</a></li>
+                    <li><a href='#section-about'>ABOUT</a></li>
+                    <li><a href='#section-contact'>CONTACT</a></li>
+                    <li><a href='#section-file'>FILES</a></li>
+                </ul>
+                <button id="logout-btn">Logout</button>
+            </div>
+        </nav>
+
+        <br><br>
+        <!----------- MAIN ----------->
+        <main>
+            <!----------- HEADER ----------->
+            <br>
+            <header class='main-header' id='section-home'>
+                <h1 class="waviy">
+                    <span style="--i:1">I</span>
+                    <span style="--i:2">N</span>
+                    <span style="--i:3">R</span>
+                    <span style="--i:4">I</span>
+                    <span style="--i:5">G</span>
+                    <span style="--i:6">O</span>
+                    <span style="--i:7">N</span>
+                    <span style="--i:8">Z</span>
+                    <span style="--i:9">A</span>
+                    <span style="--i:10">L</span>
+                    <span style="--i:11">E</span> 
+                    <span style="--i:12">S</span>            
+                </h1>
+
+                <br>
+                <img src='PROFILEPIC.jpg' alt='profile-picture'> 
+                <br>
+                <a href='Resume.pdf'>Download Resumé</a>
+                <p>Surround Yourself with People Who Believe in Your Dreams<br> Encourage your ideas, support your ambitions, and bring out the best in you.</p>
+            </header>
+
+        <!----------- SECTION 1 (ABOUT) ----------->
+    <section class='about' id='section-about'>
+        <div class='about-statement' >
+            <h2>ABOUT</h2>
+            <img src='ABOUT.jpg' alt='image Logo'>
+            <p>
+                "PHILIPPIANS 4:13 "I CAN TO ALL THINGS THROUGH CHRIST WHO STENGTHTENS ME"
+            </p>
+        </div>
+        <div class='ABOUT-statement'>
+            <h3>Vison :  </h3>
+            <p>
+                TO LET MY NATURAL CURIOSITY GUIDE ME AND INCREASE MY MOTIVATION FOR LEARNING
+            </p>
+        </div>
+        <div class='AGE-statement'>
+            <h3>Mission : </h3>
+            <p>
+                TO ACQUIRE KNOWLEDGE THAT I CAN USE IN THE WORKFACE AND IN MY DAILY LIFE TO BETTER MYSELF AND THE WORLD AROUND ME
+
+            </p>
+        </div>
+        <div class='LANGUAGE-statement'>
+            <h3>Language:</h3>
+            <p>
+            English<br>
+            Filipino<br>
+            Tagalog<br>
+            </p>
+        </div>
+    </section>
+
+
+ 
+    <!----------- SECTION 4 (CONTACT) ----------->
+    <section class='contact' id='section-contact'>
+        <h2>CONTACT</h2>
+        <form>
+            <fieldset class=''> 
+                <legend><strong>GET IN TOUCH</strong></legend>
+                <label for='name'>Your Name:  </label><input type='text' id='name' placeholder='First Name' required> <input type="text" placeholder='Last Name' name='last-name' required> <br><br>
+                <label for='email'>Email Address:  </label><input type='email' id='email' placeholder='Email Address' required> <br> <br>
+                <label for='number'>Phone Number:  </label><input type='tel' id='number' placeholder='Input your number' required> <br><br>
+                <label for="messages">Send us a message. We would like to hear from you.</label><br>
+                <textarea id='messages' cols='70' rows='5'></textarea> <br>
+                <input type='checkbox'>  Sign me up for email updates.  <br><br>
+                <input type='submit' name='submit' value='Submit Form' id='submit-form'>
+            </fieldset>
+        </form>
+    </section>
+      
+      
+    <br><br>
+   <!----------- SECTION 5 (FILES) ----------->
+   <div class="container">
+    <section class='files' id='section-file'>
+        <h3>Files</h3>
+        
+            <!-- New Folder Creation -->
+            <div>
+                <input type="text" id="folder-name" placeholder="Enter folder name" />
+                <button id="create-folder-btn">Create Folder</button>
+            </div>
+            <br>
+
+            <!-- Folder Selection -->
+            <label for="folder-select">Select Folder:</label>
+            <select id="folder-select">
+                <option value="">Select a folder</option>
+            </select>
+            <br><br>
+
+            <!-- File Upload Form -->
+            <form id="upload-form">
+                <input type="file" id="file-input" accept="/" required />
+                <button type="submit"><i class="fas fa-upload"></i> Upload</button>
+            </form>
+
+            <!-- Loading Indicator -->
+            <div id="loading" class="loading" style="display: none">
+                Uploading...
+            </div>
+
+            <!-- Uploaded Files Display -->
+            <div id="uploaded-files"></div>
+        </section>
+    </div>
+
+        <br><br>
+    </main>
+
+   
+    <footer class="footer">
+        <div class='list-footer'>
+            <a href='https://www.facebook.com/gonzales.inrii'><img src='facebook-app-symbol.png' alt='Facebook Account'></a>
+            <a href='https://www.instagram.com/inreeey'><img src="instagram logo.jpg" alt="Instagram Account"></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

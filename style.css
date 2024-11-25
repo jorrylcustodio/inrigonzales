@@ -1,0 +1,542 @@
+/* UNIVERSAL */
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(122, 114, 42);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+
+/* NAVIGATION BAR */
+/* NAVIGATION BAR */
+.navigation-bar {
+    background-color: rgb(228, 175, 137);
+    padding: 5px;
+    margin: 0;
+    height: 70px;
+    position: fixed; /* Make the navigation bar fixed */
+    top: 0; /* Align it to the top */
+    left: 0; /* Align it to the left */
+    width: 100%; /* Full width */
+    z-index: 1000; /* Ensure it stays on top of other content */
+}
+
+/* Navigation Container */
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px; /* Set a maximum width for the container */
+    margin: 0 auto; /* Center the container horizontally */
+}
+
+/* Logo */
+.logo {
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    margin-right: 20px;
+}
+
+/* Navigation List */
+.nav-list {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+/* Navigation Links */
+.nav-list li {
+    list-style: none;
+    margin: 0 10px;
+}
+
+.nav-list a {
+    color: #fff; /* White text color for navigation links */
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.nav-list a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Hover effect */
+}
+
+/* Logout Button */
+#logout-btn {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#logout-btn:hover {
+    background-color: #ff1a1a;
+}
+
+/* HEADER */
+.main-header {
+    padding-top: 100px; /* Add padding to avoid content hiding behind the navigation bar */
+}
+ul{
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+
+li{
+    display: inline-block;
+    margin: 5px;
+    padding: 5px;                 
+}
+
+.nav-list{
+    overflow: hidden;
+}
+
+.nav-list a:hover{
+    color: #f9f6ef;
+    border-top: 6px solid #f9f6ef;
+    border-bottom: 6px solid #f9f6ef;
+    animation-delay: 3s;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.nav-list a{
+    color: #000;
+    text-decoration-line: none;
+    padding: 2px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+
+
+
+/* HEADER */
+#section-home{
+    height: 100vh;
+    padding-top: 70px;
+}
+
+.main-header h1{
+    text-align: center;
+    letter-spacing: 10px;
+    padding: 5px;
+    font-size: 50px;
+    flex-wrap: wrap;
+}
+
+.main-header h2{
+    text-align: center;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 10px;
+    letter-spacing: 2px;
+}
+
+.main-header img{
+    height: 150px;
+    width: 150px;
+    border-radius: 150px;
+    padding: 3px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main-header p{
+    display: block;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    /* display: flex; 
+    justify-content: center; */
+}
+
+.main-header a{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    text-decoration: none;
+    color: #ffc107;
+}
+.wtypewriter{
+    position: relative;
+  }
+  .typewriter::after{
+    content: '|';
+    position: absolute;
+    right: 0;
+    color:#ffc107;
+    width: 100%;
+    background-color: navajowhite;
+    animation: typing 2.5s steps(30) alternate infinite;
+    
+  }
+
+  @keyframes typing{
+    to{
+        width: 0;
+    }
+  }
+
+/* SECTION 1 (ABOUT) */
+#section-about{
+    height: 100vh;
+    padding-top: 70px;
+}
+
+.about h2{
+    text-align: center;
+}
+
+.about img{
+    width: 400px;
+    height: 400px;
+    float: right;
+    border-radius: 400px;
+    padding: auto;
+    margin-right: 100px;
+}
+
+.about-statement p{
+    margin-left: 100px;
+    font-size: 45px;
+    color: khaki;
+    font-style: italic;
+}
+
+.ABOUT-statement h3{
+    margin: 15px;
+    color: khaki;
+}
+
+.ABOUT-statement p{
+    margin: 15px;
+}
+
+.AGE-statement h3{
+    margin: 15px;
+    color: khaki;
+}
+
+.AGE-statement p{
+    margin: 15px;
+}
+
+.LANGUAGE-statement h3{
+    margin: 15px;
+    color: khaki;
+}
+
+.LANGUAGE-statement p{
+    margin: 15px;
+}
+
+
+
+/* SECTION 4 (CONTACT)*/
+#section-contact{
+    height: 100vh;
+    padding-top: 70px;
+}
+
+.contact h2{
+    text-align: center;
+}
+
+fieldset{
+    text-align: center;
+    margin: auto;
+    border-color: khaki;
+    width: 1050px;
+    border-style: double;
+    border-width: 5px;
+}
+
+legend{
+    color:khaki;
+    font-size: 30px;
+    text-align: left;
+}
+/* FILES SECTION */
+.files {
+    padding: 50px;
+    text-align: center;
+}
+
+.file-category {
+    margin: 20px 0; /* Space between categories */
+    padding: 20px;
+    border: 1px solid #ccc; /* Border around each category */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.file-category h3 {
+    margin-bottom: 10px;
+}
+
+.file-category input[type="file"] {
+    margin: 10px;
+}
+
+.file-category button {
+    padding: 10px 15px;
+    background-color: khaki;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.file-category button:hover {
+    background-color: #ff1a1a;
+}
+
+.upload-status {
+    margin-top: 10px;
+    font-size: 16px;
+}
+/* FOOTER */
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: khaki;
+    text-align: center;
+ }
+.list-footer{
+    text-decoration-line: none;
+    margin: auto;
+    padding: 2px;
+    display: flex;
+    justify-content: center;
+    background-color: khaki;
+}
+
+.list-footer a{
+    padding: 10px;
+}
+
+.list-footer img{
+    width: 30px;
+    text-decoration-line: none;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: khaki;
+}
+/* Add this to your existing CSS */
+.login-form {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 9999;
+}
+
+.login-form input {
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+}
+
+.login-form button {
+    padding: 10px;
+    background-color: khaki;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.logout-form button {
+    padding: 10px;
+    background-color: khaki;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+/* MEDIA QUERY */
+/* SECTION 5 (FILES)*/
+/* Container for the file upload section */
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    text-align: center;
+  }
+  
+  /* Heading styles */
+  h3 {
+    color: black; /* green for heading */
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Folder name input styles */
+  #folder-name {
+    padding: 10px; /* Padding inside the input */
+    font-size: 16px; /* Font size for text */
+    border: 2px solid khaki; /* green border for folder name input */
+    border-radius: 5px; /* Rounded corners */
+    margin-right: 10px; /* Space between input and button */
+    transition: border-color 0.3s; /* Smooth transition for border color */
+  }
+  
+  /* Focus state for the folder name input */
+  #folder-name:focus {
+    outline: none; /* Remove default outline */
+    border-color: khaki; /* Darker green on focus */
+  }
+  
+  /* Folder selection dropdown styles */
+  #folder-select {
+    padding: 10px; /* Padding inside the select box */
+    font-size: 16px; /* Font size for dropdown text */
+    border: 2px solid black; /* green border for dropdown */
+    border-radius: 5px; /* Rounded corners */
+    background-color: khaki; /* Khaki background color */
+    color: black; /* Black text color for better visibility */
+  }
+  
+  /* Hover effect for dropdown */
+  #folder-select:hover {
+    background-color: khaki; /* Slightly darker khaki on hover for better visibility */
+  }
+  
+  /* Label style for Select Folder with green color */
+  label[for="folder-select"] {
+    color: black; /* green color for label text */
+     font-size: 2.5rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* File upload form styles */
+  #upload-form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    
+  }
+  
+  /* Styles for the file input */
+  #file-input {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid khaki; /* green border for file input */
+    border-radius: 5px;
+    margin-right: 10px;
+    transition: border-color 0.3s;
+    background-color: #e6f2ff; /* Light blue background for file input */
+    
+  }
+  
+  /* Focus state for the file input */
+  #file-input:focus {
+    outline: none;
+    border-color: khaki; /* green on focus */
+    background-color: #cce0ff; /* Lighter blue on focus */
+    
+  }
+  
+  /* Button styles */
+  button {
+    padding: 10px 20px;
+    background-color: brown; /* green background for button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  /* Icon in button */
+  button i {
+    margin-right: 5px; /* Space between icon and text */
+  }
+  
+  /* Hover effect for buttons */
+  button:hover {
+    background-color: gray; /* Medium green on hover */
+    transform: translateY(-2px);
+  }
+  
+  /* Loading indicator styles */
+  .loading {
+    text-align: center;
+    font-size: 18px;
+    color: gray; /* green for loading indicator */
+    margin-bottom: 20px;
+  }
+  
+  /* Uploaded files display area with folder-like background */
+  #uploaded-files {
+   display:flex; 
+   flex-wrap:wrap; 
+   justify-content:center; 
+   padding:.02rem; 
+   background-color:#f8f9fa; 
+   border-radius:.02rem
+  }
+  
+  
+  /* Individual file item styles */
+  .file-item {
+      width: 100px; /* Set width for image display */
+      height: auto; 
+      margin: 10px; 
+      display: flex; 
+      flex-direction: column; 
+      align-items: center; 
+      justify-content: center; 
+      border: 2px solid ; /* green border for dropdown */
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      position: relative; /* Position relative for absolute positioning of remove button */
+  }
+  
+  /* Image styles inside file items */
+  .file-item img {
+      max-width: 100%; /* Ensure image fits within the container */
+      height: auto; /* Maintain aspect ratio */
+  }
+  
+  /* Remove button styles inside file items */
+  .file-item .remove-btn {
+      position: absolute; /* Position absolute to place it in the upper right corner */
+      top: 5px; /* Distance from the top */
+      right: 5px; /* Distance from the right */
+      background-color: transparent; /* Transparent background */
+      border: none; /* No border */
+      color: red; /* Red color for visibility */
+      font-size: 16px; /* Font size for the button */
+      cursor: pointer; /* Pointer cursor on hover */
+  }
+  
+  /* Text styles inside file items (for filename) */
+  .file-item p {
+      margin-top: 40px; /* Space between image and filename text */
+  }
